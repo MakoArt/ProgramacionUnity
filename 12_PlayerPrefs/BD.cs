@@ -19,24 +19,5 @@ public class BD
         return PlayerPrefs.GetInt(nameData);
     }
 
-    //GUARDAR BOOLEANOS  
-
-     public static void SaveB(string nameData,int intData)
-    {
-      
-        if(intData==0)PlayerPrefs.SetInt(nameData, 0);
-        if(intData == 1) PlayerPrefs.SetInt(nameData, 1);
-
-    }
-
-    public static bool GetB(string nameData)
-    {
-        bool boolData=false; 
-
-        if(PlayerPrefs.GetInt(nameData)==0)boolData = false;
-        if (PlayerPrefs.GetInt(nameData)==1) boolData = true;
-
-        return boolData;    
-    }
 
 }
